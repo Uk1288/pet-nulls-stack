@@ -48,3 +48,14 @@ component "nulls" {
     null = provider.null.this
   }
 }
+
+output null_res_ids {
+  type = list(string)
+  value = component.nulls.ids
+}
+
+output pet_name_sensitive {
+  type = string
+  sensitive = true
+  value = component.pet.name
+}
