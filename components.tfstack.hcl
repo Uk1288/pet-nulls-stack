@@ -56,6 +56,6 @@ output null_res_ids {
 
 output pet_name_sensitive {
   type = string
-  sensitive = true
+  # sensitive = true => sensitive is not suppported by stacks output
   value = component.pet.name
 }
