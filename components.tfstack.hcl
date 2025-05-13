@@ -49,13 +49,12 @@ component "nulls" {
   }
 }
 
-output null_res_ids {
-  type = list(string)
-  value = component.nulls.ids
-}
+# output null_res_ids {
+ #  type = list(string)
+#   value = component.nulls.ids
+# }
 
-output pet_name_sensitive {
-  type = string
-  # sensitive = true => sensitive is not suppported by stacks output
-  value = component.pet.name
-}
+# output pet_name_sensitive {
+ #  type = string
+#   value = component.pet.name
+# }
